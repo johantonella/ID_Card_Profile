@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id Card Profile</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+<body>
+  
+  <div class="container">
+  <div class="profileCard">
+    <div class="profileHeader">
+      <img src="./img/foto_perfil_1.jpg" alt="">
+      <div class="info">
+        <span class="name">Johanna Raffo</span>
+        <span class="designation">Fullstak Developer Jr.</span>
+      </div>
+    </div>
+ 
+    <div class="profileBody">
+      Estudiante de Programación, apasionada del diseño y en constante aprendizaje 
+      de nuevas tecnologías para crear la mejor experiencia posible al usuario.
+      
+      <div class="profileFooter">
+        <button class="share">
+          <i class="fa fa-share-alt"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></i>
+          <i class="fa fa-close"><svg  width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg></i>
+        </button>
+       
+
+      <div class="icons"><span class="subInfo"><a href='https://github.com/johantonella'><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></span></a></div>
+      <div class="icons"><span class="subInfo"><a href='https://www.linkedin.com/in/johanna-antonella-raffo-8a9564158/'><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></span></a></div>
+      <div class="icons"><span class="subInfo"><a href='mailto:raffojohanna@gmail.com'><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span></a></div>
+
+    </div>
+
+    <div class="location">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Buenos Aires, Argentina
+    </div>
+  </div>
+  </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script id="rendered-js">
+
+  $(document).ready(function () {
+    $(".profileCard").toArray().forEach(function (card) {
+      $(card).find(".profileFooter .share").on('click', function () {
+        $(card).toggleClass("open");
+      });
+    });
+  });
+
+  </script>
+</body>
+</html>
